@@ -1,1 +1,1 @@
-# ArquitecturaProcesadores
+# Multiplicador

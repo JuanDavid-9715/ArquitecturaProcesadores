@@ -1,1 +1,1 @@
-# ArquitecturaProcesadores
+# Sumador de un bit
