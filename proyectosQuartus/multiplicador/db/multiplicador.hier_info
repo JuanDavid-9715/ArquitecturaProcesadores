@@ -1,0 +1,43 @@
+|multiplicador
+clk => pp[0]~reg0.CLK
+clk => pp[1]~reg0.CLK
+clk => pp[2]~reg0.CLK
+clk => pp[3]~reg0.CLK
+clk => pp[4]~reg0.CLK
+clk => pp[5]~reg0.CLK
+clk => B[0].CLK
+clk => B[1].CLK
+clk => B[2].CLK
+clk => A[0].CLK
+clk => A[1].CLK
+clk => A[2].CLK
+clk => A[3].CLK
+clk => A[4].CLK
+clk => A[5].CLK
+clk => rst.CLK
+clk => done~reg0.CLK
+clk => add.CLK
+clk => sh.CLK
+clk => status~6.DATAIN
+init => status.OUTPUTSELECT
+init => status.OUTPUTSELECT
+init => status.OUTPUTSELECT
+init => status.OUTPUTSELECT
+init => status.OUTPUTSELECT
+init => done.OUTPUTSELECT
+init => rst.OUTPUTSELECT
+MR[0] => B.DATAB
+MR[1] => B.DATAB
+MR[2] => B.DATAB
+MD[0] => A.DATAB
+MD[1] => A.DATAB
+MD[2] => A.DATAB
+done << done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[0] << pp[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[1] << pp[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[2] << pp[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[3] << pp[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[4] << pp[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[5] << pp[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
