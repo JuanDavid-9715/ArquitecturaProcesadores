@@ -14,6 +14,34 @@ module sumador_1bit_tb();
 
     initial begin
         A_tb=0;
+        B_tb=0;
+        Ci_tb=0;
+        #25
+        A_tb=1;
+        B_tb=0;
+        Ci_tb=0;
+        #25
+        A_tb=0;
+        B_tb=1;
+        Ci_tb=0;
+        #25
+        A_tb=1;
+        B_tb=1;
+        Ci_tb=0;
+        #25
+        A_tb=0;
+        B_tb=0;
+        Ci_tb=1;
+        #25
+        A_tb=1;
+        B_tb=0;
+        Ci_tb=1;
+        #25
+        A_tb=0;
+        B_tb=1;
+        Ci_tb=1;
+        #25
+        A_tb=1;
         B_tb=1;
         Ci_tb=1;
     end
