@@ -6,7 +6,7 @@ module sumador_1bit_tb();
     reg B_tb;
     reg Ci_tb;
 
-    sumador uut(
+    sumador_1bit uut (
         .A(A_tb),
         .B(B_tb),
         .Ci(Ci_tb)

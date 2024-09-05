@@ -1,4 +1,4 @@
-module sumador(
+module sumador_1bit(
     input A,
     input B,
     input Ci,
