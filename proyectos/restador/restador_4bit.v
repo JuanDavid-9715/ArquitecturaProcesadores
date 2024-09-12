@@ -15,6 +15,6 @@ xor(B[1], select, x[1]);
 xor(B[2], select, x[2]);
 xor(B[3], select, x[3]);
 
-sumador_4bit (.A(A), .B(x), Cout(Cout), .Sum(S));
+sumador_4bit (.A(A), .B(x), .Ci(select), Cout(Cout), .Sum(S));
 
 endmodule
