@@ -4,17 +4,17 @@ module restador_4bit(
     input [3:0] A,
     input [3:0] B,
     input       select,
-    output [3:0] S,
-    output       Cout
+    output Cout,
+    output [3:0] S
 );
 
-wire [3:0] x;
+wire [3:0] Bx;
 
-xor(B[0], select, x[0]);
-xor(B[1], select, x[1]);
-xor(B[2], select, x[2]);
-xor(B[3], select, x[3]);
+xor(Bx[0], B[0], select);
+xor(Bx[1], B[1], select);
+xor(Bx[2], B[2], select);
+xor(Bx[3], B[3], select);
 
-sumador_4bit (.A(A), .B(x), .Ci(select), Cout(Cout), .Sum(S));
+sumador_4bit s0(.A(A), .B(Bx), .Ci(select), .Cout(Cout), .Sum(S));
 
 endmodule
