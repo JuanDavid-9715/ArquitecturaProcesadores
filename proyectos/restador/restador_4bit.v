@@ -18,5 +18,5 @@ module restador_4bit(
 
     sumador_4bit s0(.A(A), .B(Bx), .Ci(select), .Cout(Cout), .Sum(s1));
 
-    assign S = (Cout) ? s1 : ~s1 | 1;
+    assign S = (Cout) ? s1 : ~s1 + 1'b1;
 endmodule
