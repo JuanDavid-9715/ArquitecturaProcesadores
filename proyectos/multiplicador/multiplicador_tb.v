@@ -5,10 +5,10 @@ module mult_tb();
 
     reg clk;
     reg init;
-    reg [2:0] MR;
-    reg [2:0] MD;
+    reg [3:0] MR;
+    reg [3:0] MD;
 
-    wire [5:0] pp;
+    wire [7:0] pp;
     wire done;
 
     // Instantiate the Unit Under Test (UUT)
@@ -28,11 +28,11 @@ module mult_tb();
         MR = 3'b0;
         MD = 3'b0;
         #10 init = 1;
-        for(MR = 0; MR < 7; MR = MR + 1) begin
-            for(MD = 0; MD < 7; MD = MD + 1) begin
+        for(MR = 0; MR < 15; MR = MR + 1) begin
+            for(MD = 0; MD < 15; MD = MD + 1) begin
                 #2 init = 1;
                 #2 init = 0;
-                #20 
+                #30 
                 #5 $display("%d * %d = %d", MD, MR, pp);
             end
         end
