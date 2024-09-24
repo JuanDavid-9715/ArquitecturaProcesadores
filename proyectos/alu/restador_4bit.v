@@ -1,22 +1,20 @@
-`include "sumador_4bit.v"
-
 module restador_4bit(
     input [3:0] A,
     input [3:0] B,
-    input       select,
-    output Cout,
-    output   [3:0] S
+    input       Select,
+    output      Cout,
+    output   [3:0] Res
 );
 
     wire [3:0] Bx;
-    wire [3:0] s1;
+    wire [3:0] s;
 
-    xor(Bx[0], B[0], select);
-    xor(Bx[1], B[1], select);
-    xor(Bx[2], B[2], select);
-    xor(Bx[3], B[3], select);
+    xor(Bx[0], B[0], Select);
+    xor(Bx[1], B[1], Select);
+    xor(Bx[2], B[2], Select);
+    xor(Bx[3], B[3], Select);
 
-    sumador_4bit s0(.A(A), .B(Bx), .Ci(select), .Cout(Cout), .Sum(s1));
+    sumador_4bit s0(.A(A), .B(Bx), .Ci(Select), .Cout(Cout), .Sum(s));
 
-    assign S = (Cout) ? s1 : ~s1 + 1'b1;
+    assign Res = (Cout) ? s : ~s + 1'b1;
 endmodule

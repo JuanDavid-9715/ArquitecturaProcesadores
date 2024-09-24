@@ -1,10 +1,10 @@
 module sumador_1bit(
-    input A,
-    input B,
-    input Ci,
-    output cout,
-    output S
-);
+        input A,
+        input B,
+        input Ci,
+        output Cout,
+        output Sum
+    );
 
     wire a_ab;
     wire x_ab;
@@ -13,8 +13,8 @@ module sumador_1bit(
     and(a_ab, A, B);
     xor(x_ab, A, B);
 
-    xor(S, x_ab, Ci);
+    xor(Sum, x_ab, Ci);
     and(count_t, x_ab, Ci);
 
-    or(cout, count_t, a_ab);
+    or(Cout, count_t, a_ab);
 endmodule
