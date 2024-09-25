@@ -3,7 +3,7 @@ module restador_4bit(
     input [3:0] B,
     input       Select,
     output      Cout,
-    output   [3:0] Res
+    output [3:0] Res
 );
 
     wire [3:0] Bx;
