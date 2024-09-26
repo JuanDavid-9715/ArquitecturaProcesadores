@@ -2,6 +2,7 @@
 `include "sumador_4bit.v"
 `include "restador_4bit.v"
 `include "multiplicador.v"
+`include "and.v"
 
 module alu (
     input [3:0] A,
@@ -14,13 +15,14 @@ module alu (
     output reg [7:0] Sal
 );
 
-    wire [3:0] sal_sum, sal_res;
+    wire [3:0] sal_sum, sal_res, sal_and;
     wire [7:0] sal_mul;
     wire cout_sum, cout_res, done_mul;
 
     sumador_4bit sum(.A(A), .B(B), .Ci(1'b0), .Cout(cout_sum), .Sum(sal_sum));
     restador_4bit res(.A(A), .B(B), .Select(1'b1), .Cout(cout_res), .Res(sal_res));
     multiplicador mul(.clk(Clk), .init(Init), .MR(A), .MD(B), .done(done_mul), .pp(sal_mul));
+    and0 and1(.A(A), .B(B), .Sal(sal_and));
 
     always @(*) begin
         case(Select)
@@ -40,7 +42,7 @@ module alu (
                 Done = done_mul;
             end
             2'b11: begin
-                Sal = 8'b00000000; 
+                Sal = sal_and;
                 Cout = 1'b0;
                 Done = 1'b0;
             end

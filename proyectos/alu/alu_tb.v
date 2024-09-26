@@ -56,6 +56,13 @@ module alu_tb();
             end
         end
 
+        Select_tb = 2'b11;
+        for(A_tb = 0; A_tb < 15; A_tb = A_tb + 1) begin
+            for(B_tb = 0; B_tb < 15; B_tb = B_tb + 1) begin
+                #5 $display("el valor de %d & %d = %d", A_tb, B_tb, Sal_tb);
+            end
+        end
+
         $finish;
     end      
 
