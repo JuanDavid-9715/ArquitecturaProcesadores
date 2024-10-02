@@ -1,0 +1,15 @@
+module displayOpe(
+    input [3:0] ope,
+    output reg [6:0] seg
+);
+    always @(ope) begin
+        case (ope)
+            0:seg = 7'b0011101;
+            1:seg = 7'b0111111;
+            2:seg = 7'b0001001;
+            3:seg = 7'b0001000;
+            4:seg = 7'b0110111;
+            default:seg = 7'b1111111;
+        endcase
+    end
+endmodule
