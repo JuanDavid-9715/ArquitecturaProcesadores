@@ -301,6 +301,11 @@ module and0(
 endmodule
 <p style="text-align: justify;">El módulo and0 implementa una operación AND bit a bit entre dos entradas de 4 bits, A y B. Cada bit de la salida Sal es el resultado de aplicar la operación AND entre los bits correspondientes de A y B. La línea assign Sal = A & B; realiza la operación, generando una salida de 4 bits donde cada bit es el resultado de comparar los bits correspondientes de las entradas.</p>
 
+#### Esquemático Quartus
+<div align="center">
+    <img src="img/image-5.png" alt="alt text">
+</div>
+
 ### CONFIGURACIÓN DE DISPLAYS
 #### 1. Númerologia 
 
@@ -383,11 +388,6 @@ module displayOpe(
     end
 endmodule
 ```
-#### Esquemático Quartus
-<div align="center">
-    <img src="img/image-5.png" alt="alt text">
-</div>
-
 ### IMPLEMENTACIÓN DEL CODIGO GENERAL
 <p style="text-align: justify;">El código principal de la ALU, es el módulo top, que integra todas las funcionalidades necesarias para realizar operaciones aritméticas y lógicas sobre dos números de 4 bits. Este módulo recibe las entradas correspondientes y gestiona el flujo de datos entre las diferentes partes del sistema. 
 
