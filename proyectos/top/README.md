@@ -43,7 +43,7 @@ endmodule
 
 #### Diagrama 
 <div align="center">
-    <img src="image.png" alt="alt text">
+    <img src="img/image.png" alt="alt text">
 </div>
 
 ### SUMADOR DE 4 BIT
@@ -90,12 +90,12 @@ endmodule
 
 #### Esquemático Quartus
 <div align="center">
-    <img src="image-2.png" alt="alt text">
+    <img src="img/image-2.png" alt="alt text">
 </div>
 
 #### Simulación
 <div align="center">
-    <img src="image-3.png" alt="alt text">
+    <img src="img/image-3.png" alt="alt text">
 </div>
 
 ### RESTADOR DE 4 BIT 
@@ -135,7 +135,7 @@ endmodule
 
 #### Esquemático Quartus
 <div align="center">
-    <img src="image-1.png" alt="alt text">
+    <img src="img/image-1.png" alt="alt text">
 </div>
 
 #### Esquemático 
@@ -276,7 +276,7 @@ endmodule
 
 #### Esquemático Quartus
 <div align="center">
-    <img src="image-4.png" alt="alt text">
+    <img src="img/image-4.png" alt="alt text">
 </div>
 
 ### OPERACIÓN AND LOGICA
@@ -385,7 +385,7 @@ endmodule
 ```
 #### Esquemático Quartus
 <div align="center">
-    <img src="image-5.png" alt="alt text">
+    <img src="img/image-5.png" alt="alt text">
 </div>
 
 ### IMPLEMENTACIÓN DEL CODIGO GENERAL
