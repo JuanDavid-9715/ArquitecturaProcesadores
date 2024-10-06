@@ -32,12 +32,17 @@ module top (
 
     alu alu1(.A(A), .B(B), .Clk(Clk), .Init(~Init), .Select(Select), .Cout(Cout), .Done(Done), .Sal(alu_oup));
 
-    always @(posedge Cout or negedge Cout) begin
-        if (Select == 2'b01) begin
-            operador = (Cout) ? 4'b0001 : 4'b0100; 
+    always @(negedge Clk) begin
+        if (Select != 2'b01) begin
+            operador = 4'b0100;
         end
         else begin
-            operador = 4'b0100;
+            if (alu_oup != 0) begin
+                operador = (Cout) ? 4'b0001 : 4'b0100;
+            end
+            else begin
+                operador = 4'b0100;
+            end
         end
     end
 
