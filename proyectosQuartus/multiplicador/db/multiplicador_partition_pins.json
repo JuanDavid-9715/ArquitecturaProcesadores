@@ -32,6 +32,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "pp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pp[7]",
+					"strict" : false
+				},
+				{
 					"name" : "init",
 					"strict" : false
 				},
@@ -52,6 +60,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "MD[3]",
+					"strict" : false
+				},
+				{
 					"name" : "MR[0]",
 					"strict" : false
 				},
@@ -61,6 +73,10 @@
 				},
 				{
 					"name" : "MR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MR[3]",
 					"strict" : false
 				}
 			]

@@ -1,0 +1,8 @@
+
+State Machine - |alu|multiplicador:mul|status
+Name status.SHIFT status.ADD status.CHECK status.START status.END1 
+status.START 0 0 0 0 0 
+status.CHECK 0 0 1 1 0 
+status.ADD 0 1 0 1 0 
+status.SHIFT 1 0 0 1 0 
+status.END1 0 0 0 1 1 

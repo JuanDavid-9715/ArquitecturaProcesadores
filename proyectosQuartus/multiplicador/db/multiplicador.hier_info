@@ -5,15 +5,20 @@ clk => pp[2]~reg0.CLK
 clk => pp[3]~reg0.CLK
 clk => pp[4]~reg0.CLK
 clk => pp[5]~reg0.CLK
+clk => pp[6]~reg0.CLK
+clk => pp[7]~reg0.CLK
 clk => B[0].CLK
 clk => B[1].CLK
 clk => B[2].CLK
+clk => B[3].CLK
 clk => A[0].CLK
 clk => A[1].CLK
 clk => A[2].CLK
 clk => A[3].CLK
 clk => A[4].CLK
 clk => A[5].CLK
+clk => A[6].CLK
+clk => A[7].CLK
 clk => rst.CLK
 clk => done~reg0.CLK
 clk => add.CLK
@@ -29,15 +34,19 @@ init => rst.OUTPUTSELECT
 MR[0] => B.DATAB
 MR[1] => B.DATAB
 MR[2] => B.DATAB
+MR[3] => B.DATAB
 MD[0] => A.DATAB
 MD[1] => A.DATAB
 MD[2] => A.DATAB
-done << done~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pp[0] << pp[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pp[1] << pp[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pp[2] << pp[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pp[3] << pp[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pp[4] << pp[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pp[5] << pp[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+MD[3] => A.DATAB
+done <= done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[0] <= pp[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[1] <= pp[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[2] <= pp[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[3] <= pp[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[4] <= pp[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[5] <= pp[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[6] <= pp[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pp[7] <= pp[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

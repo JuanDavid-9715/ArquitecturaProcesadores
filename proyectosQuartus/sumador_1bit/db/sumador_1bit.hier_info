@@ -1,0 +1,11 @@
+|sumador_1bit
+A => a_ab.IN0
+A => x_ab.IN0
+B => a_ab.IN1
+B => x_ab.IN1
+Ci => comb.IN1
+Ci => count_t.IN1
+Cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

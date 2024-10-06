@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Cout",
+					"strict" : false
+				},
+				{
+					"name" : "Done",
+					"strict" : false
+				},
+				{
+					"name" : "Sal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Sal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Sal[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Sal[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Sal[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Sal[7]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Select[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Select[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Init",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

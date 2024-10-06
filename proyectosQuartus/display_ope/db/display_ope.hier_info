@@ -1,0 +1,17 @@
+|display_ope
+ope[0] => Decoder0.IN3
+ope[1] => Decoder0.IN2
+ope[1] => Decoder1.IN2
+ope[2] => Decoder0.IN1
+ope[2] => Decoder1.IN1
+ope[3] => Decoder0.IN0
+ope[3] => Decoder1.IN0
+seg[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

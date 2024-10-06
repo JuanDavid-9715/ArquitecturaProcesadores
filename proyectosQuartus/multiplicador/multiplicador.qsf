@@ -19,7 +19,7 @@
 #
 # Quartus Prime
 # Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-# Date created = 21:17:35  August 28, 2024
+# Date created = 19:31:52  September 25, 2024
 #
 # -------------------------------------------------------------------------- #
 #
@@ -41,8 +41,10 @@ set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
 set_global_assignment -name TOP_LEVEL_ENTITY multiplicador
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:17:35  AUGUST 28, 2024"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:31:52  SEPTEMBER 25, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Lite Edition"
+set_global_assignment -name VERILOG_FILE ../sumador_1bit/sumador_1bit.v
+set_global_assignment -name VERILOG_FILE ../sumador_4bit/sumador_4bit.v
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -54,23 +56,8 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name VERILOG_FILE multiplicador.v
+set_global_assignment -name SYSTEMVERILOG_FILE multiplicador.sv
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_C10 -to MD[0]
-set_location_assignment PIN_C11 -to MD[1]
-set_location_assignment PIN_D12 -to MD[2]
-set_location_assignment PIN_C12 -to MR[0]
-set_location_assignment PIN_A12 -to MR[1]
-set_location_assignment PIN_B12 -to MR[2]
-set_location_assignment PIN_P11 -to clk
-set_location_assignment PIN_A8 -to pp[0]
-set_location_assignment PIN_A9 -to pp[1]
-set_location_assignment PIN_A10 -to pp[2]
-set_location_assignment PIN_B10 -to pp[3]
-set_location_assignment PIN_D13 -to pp[4]
-set_location_assignment PIN_C13 -to pp[5]
-set_location_assignment PIN_D14 -to done
-set_location_assignment PIN_F15 -to init
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
