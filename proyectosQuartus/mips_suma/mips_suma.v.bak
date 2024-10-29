@@ -1,0 +1,30 @@
+module mips_suma (
+	input [3:0] addr,
+	input clk,
+   output [7:0] out
+	);
+	
+	wire [31:0] instruc;
+	
+	memoria_instrucciones mem_inst(.addr(addr), .instruc(instruc));
+	banco_registros b_reg(
+		.addrRa(instruc[]), 
+		.addrRb(), 
+		.datOutRa(), 
+		.datOutRb(), 
+		.addrW(), 
+		.datW(), 
+		.RegWrite(), 
+		.clk(clk), 
+		.rst(instruc[])
+	);
+	alu alu1(
+		.A(),
+		.B(),
+		.Clk(),
+		.Init(),    
+		.Select(),
+		.Cout(),
+		.Done(),
+		.Sal()
+	);
