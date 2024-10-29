@@ -1,0 +1,174 @@
+Determining the location of the ModelSim executable...
+
+Using: C:/intelFPGA/20.1/modelsim_ase/win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off banco_registros -c banco_registros --vector_source="D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/Waveform.vwf" --testbench_file="D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/simulation/qsim/Waveform.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Copyright (C) 2023  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Thu Oct 24 14:03:08 2024
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off banco_registros -c banco_registros --vector_source=D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/Waveform.vwf --testbench_file=D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/simulation/qsim/Waveform.vwf.vt
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+les
+
+: Ignoring output pin "datOutRb[4]" in vector source file when writing test bench files
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/simulation/qsim/" banco_registros -c banco_registros
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Copyright (C) 2023  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Thu Oct 24 14:03:09 2024
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/simulation/qsim/ banco_registros -c banco_registros
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file banco_registros.vo in folder "D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4656 megabytes
+    Info: Processing ended: Thu Oct 24 14:03:10 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/simulation/qsim/banco_registros.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/intelFPGA/20.1/modelsim_ase/win32aloem/vsim -c -do banco_registros.do
+
+Reading pref.tcl
+
+
+# 2020.1
+
+
+# do banco_registros.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+# Start time: 14:03:11 on Oct 24,2024
+# vlog -work work banco_registros.vo 
+
+# -- Compiling module banco_registros
+
+# -- Compiling module hard_block
+
+# 
+
+# Top level modules:
+# 	banco_registros
+
+# End time: 14:03:11 on Oct 24,2024, Elapsed time: 0:00:00
+
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+# Start time: 14:03:11 on Oct 24,2024
+
+# vlog -work work Waveform.vwf.vt 
+
+# -- Compiling module banco_registros_vlg_vec_tst
+
+# 
+
+# Top level modules:
+# 	banco_registros_vlg_vec_tst
+
+# End time: 14:03:11 on Oct 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.banco_registros_vlg_vec_tst 
+# Start time: 14:03:11 on Oct 24,2024
+# Loading work.banco_registros_vlg_vec_tst
+# Loading work.banco_registros
+# Loading work.hard_block
+# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb
+# Loading fiftyfivenm_ver.fiftyfivenm_io_obuf
+# Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf
+# Loading fiftyfivenm_ver.fiftyfivenm_clkctrl
+# Loading fiftyfivenm_ver.fiftyfivenm_mux41
+# Loading fiftyfivenm_ver.fiftyfivenm_ena_reg
+# Loading altera_ver.dffeas
+# Loading fiftyfivenm_ver.fiftyfivenm_unvm
+# Loading fiftyfivenm_ver.fiftyfivenm_adcblock
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC1~ '.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /banco_registros_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC1~  File: banco_registros.vo Line: 4948
+# ** Warning: (vsim-3722) banco_registros.vo(4948): [TFMPC] - Missing connection for port 'clk_dft'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC2~ '.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /banco_registros_vlg_vec_tst/i1/\~QUARTUS_CREATED_ADC2~  File: banco_registros.vo Line: 4971
+# ** Warning: (vsim-3722) banco_registros.vo(4971): [TFMPC] - Missing connection for port 'clk_dft'.
+
+# after#26
+
+# ** Note: $finish    : Waveform.vwf.vt(59)
+#    Time: 10 ns  Iteration: 0  Instance: /banco_registros_vlg_vec_tst
+
+# End time: 14:03:12 on Oct 24,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/Waveform.vwf...
+
+Reading D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/simulation/qsim/banco_registros.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to D:/Users/JuanDavidMedellinC/Downloads/proyectosQuartus/banco_registros/simulation/qsim/banco_registros_20241024140312.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

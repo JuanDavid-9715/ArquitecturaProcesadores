@@ -1,0 +1,724 @@
+// Copyright (C) 2023  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/24/2024 14:03:08"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          banco_registros
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module banco_registros_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg RegWrite;
+reg [31:0] addrRa;
+reg [31:0] addrRb;
+reg [31:0] addrW;
+reg clk;
+reg [31:0] datW;
+reg rst;
+// wires                                               
+wire [31:0] datOutRa;
+wire [31:0] datOutRb;
+
+// assign statements (if any)                          
+banco_registros i1 (
+// port map - connection between master ports and signals/registers   
+	.RegWrite(RegWrite),
+	.addrRa(addrRa),
+	.addrRb(addrRb),
+	.addrW(addrW),
+	.clk(clk),
+	.datOutRa(datOutRa),
+	.datOutRb(datOutRb),
+	.datW(datW),
+	.rst(rst)
+);
+initial 
+begin 
+#10000 $finish;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #250 1'b1;
+	#250;
+end 
+// addrRa[ 31 ]
+initial
+begin
+	addrRa[31] = 1'b0;
+end 
+// addrRa[ 30 ]
+initial
+begin
+	addrRa[30] = 1'b0;
+end 
+// addrRa[ 29 ]
+initial
+begin
+	addrRa[29] = 1'b0;
+end 
+// addrRa[ 28 ]
+initial
+begin
+	addrRa[28] = 1'b0;
+end 
+// addrRa[ 27 ]
+initial
+begin
+	addrRa[27] = 1'b0;
+end 
+// addrRa[ 26 ]
+initial
+begin
+	addrRa[26] = 1'b0;
+end 
+// addrRa[ 25 ]
+initial
+begin
+	addrRa[25] = 1'b0;
+end 
+// addrRa[ 24 ]
+initial
+begin
+	addrRa[24] = 1'b0;
+end 
+// addrRa[ 23 ]
+initial
+begin
+	addrRa[23] = 1'b0;
+end 
+// addrRa[ 22 ]
+initial
+begin
+	addrRa[22] = 1'b0;
+end 
+// addrRa[ 21 ]
+initial
+begin
+	addrRa[21] = 1'b0;
+end 
+// addrRa[ 20 ]
+initial
+begin
+	addrRa[20] = 1'b0;
+end 
+// addrRa[ 19 ]
+initial
+begin
+	addrRa[19] = 1'b0;
+end 
+// addrRa[ 18 ]
+initial
+begin
+	addrRa[18] = 1'b0;
+end 
+// addrRa[ 17 ]
+initial
+begin
+	addrRa[17] = 1'b0;
+end 
+// addrRa[ 16 ]
+initial
+begin
+	addrRa[16] = 1'b0;
+end 
+// addrRa[ 15 ]
+initial
+begin
+	addrRa[15] = 1'b0;
+end 
+// addrRa[ 14 ]
+initial
+begin
+	addrRa[14] = 1'b0;
+end 
+// addrRa[ 13 ]
+initial
+begin
+	addrRa[13] = 1'b0;
+end 
+// addrRa[ 12 ]
+initial
+begin
+	addrRa[12] = 1'b0;
+end 
+// addrRa[ 11 ]
+initial
+begin
+	addrRa[11] = 1'b0;
+end 
+// addrRa[ 10 ]
+initial
+begin
+	addrRa[10] = 1'b0;
+end 
+// addrRa[ 9 ]
+initial
+begin
+	addrRa[9] = 1'b0;
+end 
+// addrRa[ 8 ]
+initial
+begin
+	addrRa[8] = 1'b0;
+end 
+// addrRa[ 7 ]
+initial
+begin
+	addrRa[7] = 1'b0;
+end 
+// addrRa[ 6 ]
+initial
+begin
+	addrRa[6] = 1'b0;
+end 
+// addrRa[ 5 ]
+initial
+begin
+	addrRa[5] = 1'b0;
+end 
+// addrRa[ 4 ]
+initial
+begin
+	addrRa[4] = 1'b0;
+end 
+// addrRa[ 3 ]
+initial
+begin
+	addrRa[3] = 1'b0;
+end 
+// addrRa[ 2 ]
+initial
+begin
+	addrRa[2] = 1'b0;
+end 
+// addrRa[ 1 ]
+initial
+begin
+	addrRa[1] = 1'b0;
+end 
+// addrRa[ 0 ]
+initial
+begin
+	addrRa[0] = 1'b0;
+end 
+// addrRb[ 31 ]
+initial
+begin
+	addrRb[31] = 1'b0;
+end 
+// addrRb[ 30 ]
+initial
+begin
+	addrRb[30] = 1'b0;
+end 
+// addrRb[ 29 ]
+initial
+begin
+	addrRb[29] = 1'b0;
+end 
+// addrRb[ 28 ]
+initial
+begin
+	addrRb[28] = 1'b0;
+end 
+// addrRb[ 27 ]
+initial
+begin
+	addrRb[27] = 1'b0;
+end 
+// addrRb[ 26 ]
+initial
+begin
+	addrRb[26] = 1'b0;
+end 
+// addrRb[ 25 ]
+initial
+begin
+	addrRb[25] = 1'b0;
+end 
+// addrRb[ 24 ]
+initial
+begin
+	addrRb[24] = 1'b0;
+end 
+// addrRb[ 23 ]
+initial
+begin
+	addrRb[23] = 1'b0;
+end 
+// addrRb[ 22 ]
+initial
+begin
+	addrRb[22] = 1'b0;
+end 
+// addrRb[ 21 ]
+initial
+begin
+	addrRb[21] = 1'b0;
+end 
+// addrRb[ 20 ]
+initial
+begin
+	addrRb[20] = 1'b0;
+end 
+// addrRb[ 19 ]
+initial
+begin
+	addrRb[19] = 1'b0;
+end 
+// addrRb[ 18 ]
+initial
+begin
+	addrRb[18] = 1'b0;
+end 
+// addrRb[ 17 ]
+initial
+begin
+	addrRb[17] = 1'b0;
+end 
+// addrRb[ 16 ]
+initial
+begin
+	addrRb[16] = 1'b0;
+end 
+// addrRb[ 15 ]
+initial
+begin
+	addrRb[15] = 1'b0;
+end 
+// addrRb[ 14 ]
+initial
+begin
+	addrRb[14] = 1'b0;
+end 
+// addrRb[ 13 ]
+initial
+begin
+	addrRb[13] = 1'b0;
+end 
+// addrRb[ 12 ]
+initial
+begin
+	addrRb[12] = 1'b0;
+end 
+// addrRb[ 11 ]
+initial
+begin
+	addrRb[11] = 1'b0;
+end 
+// addrRb[ 10 ]
+initial
+begin
+	addrRb[10] = 1'b0;
+end 
+// addrRb[ 9 ]
+initial
+begin
+	addrRb[9] = 1'b0;
+end 
+// addrRb[ 8 ]
+initial
+begin
+	addrRb[8] = 1'b0;
+end 
+// addrRb[ 7 ]
+initial
+begin
+	addrRb[7] = 1'b0;
+end 
+// addrRb[ 6 ]
+initial
+begin
+	addrRb[6] = 1'b0;
+end 
+// addrRb[ 5 ]
+initial
+begin
+	addrRb[5] = 1'b0;
+end 
+// addrRb[ 4 ]
+initial
+begin
+	addrRb[4] = 1'b0;
+end 
+// addrRb[ 3 ]
+initial
+begin
+	addrRb[3] = 1'b0;
+end 
+// addrRb[ 2 ]
+initial
+begin
+	addrRb[2] = 1'b0;
+end 
+// addrRb[ 1 ]
+initial
+begin
+	addrRb[1] = 1'b0;
+end 
+// addrRb[ 0 ]
+initial
+begin
+	addrRb[0] = 1'b1;
+end 
+
+// RegWrite
+initial
+begin
+	RegWrite = 1'b1;
+	RegWrite = #6000 1'b0;
+	RegWrite = #1000 1'b1;
+end 
+// addrW[ 31 ]
+initial
+begin
+	addrW[31] = 1'b0;
+end 
+// addrW[ 30 ]
+initial
+begin
+	addrW[30] = 1'b0;
+end 
+// addrW[ 29 ]
+initial
+begin
+	addrW[29] = 1'b0;
+end 
+// addrW[ 28 ]
+initial
+begin
+	addrW[28] = 1'b0;
+end 
+// addrW[ 27 ]
+initial
+begin
+	addrW[27] = 1'b0;
+end 
+// addrW[ 26 ]
+initial
+begin
+	addrW[26] = 1'b0;
+end 
+// addrW[ 25 ]
+initial
+begin
+	addrW[25] = 1'b0;
+end 
+// addrW[ 24 ]
+initial
+begin
+	addrW[24] = 1'b0;
+end 
+// addrW[ 23 ]
+initial
+begin
+	addrW[23] = 1'b0;
+end 
+// addrW[ 22 ]
+initial
+begin
+	addrW[22] = 1'b0;
+end 
+// addrW[ 21 ]
+initial
+begin
+	addrW[21] = 1'b0;
+end 
+// addrW[ 20 ]
+initial
+begin
+	addrW[20] = 1'b0;
+end 
+// addrW[ 19 ]
+initial
+begin
+	addrW[19] = 1'b0;
+end 
+// addrW[ 18 ]
+initial
+begin
+	addrW[18] = 1'b0;
+end 
+// addrW[ 17 ]
+initial
+begin
+	addrW[17] = 1'b0;
+end 
+// addrW[ 16 ]
+initial
+begin
+	addrW[16] = 1'b0;
+end 
+// addrW[ 15 ]
+initial
+begin
+	addrW[15] = 1'b0;
+end 
+// addrW[ 14 ]
+initial
+begin
+	addrW[14] = 1'b0;
+end 
+// addrW[ 13 ]
+initial
+begin
+	addrW[13] = 1'b0;
+end 
+// addrW[ 12 ]
+initial
+begin
+	addrW[12] = 1'b0;
+end 
+// addrW[ 11 ]
+initial
+begin
+	addrW[11] = 1'b0;
+end 
+// addrW[ 10 ]
+initial
+begin
+	addrW[10] = 1'b0;
+end 
+// addrW[ 9 ]
+initial
+begin
+	addrW[9] = 1'b0;
+end 
+// addrW[ 8 ]
+initial
+begin
+	addrW[8] = 1'b0;
+end 
+// addrW[ 7 ]
+initial
+begin
+	addrW[7] = 1'b0;
+end 
+// addrW[ 6 ]
+initial
+begin
+	addrW[6] = 1'b0;
+end 
+// addrW[ 5 ]
+initial
+begin
+	addrW[5] = 1'b0;
+end 
+// addrW[ 4 ]
+initial
+begin
+	addrW[4] = 1'b0;
+end 
+// addrW[ 3 ]
+initial
+begin
+	addrW[3] = 1'b0;
+end 
+// addrW[ 2 ]
+initial
+begin
+	addrW[2] = 1'b0;
+end 
+// addrW[ 1 ]
+initial
+begin
+	addrW[1] = 1'b0;
+end 
+// addrW[ 0 ]
+initial
+begin
+	addrW[0] = 1'b0;
+end 
+// datW[ 31 ]
+initial
+begin
+	datW[31] = 1'b0;
+end 
+// datW[ 30 ]
+initial
+begin
+	datW[30] = 1'b0;
+end 
+// datW[ 29 ]
+initial
+begin
+	datW[29] = 1'b0;
+end 
+// datW[ 28 ]
+initial
+begin
+	datW[28] = 1'b0;
+end 
+// datW[ 27 ]
+initial
+begin
+	datW[27] = 1'b0;
+end 
+// datW[ 26 ]
+initial
+begin
+	datW[26] = 1'b0;
+end 
+// datW[ 25 ]
+initial
+begin
+	datW[25] = 1'b0;
+end 
+// datW[ 24 ]
+initial
+begin
+	datW[24] = 1'b0;
+end 
+// datW[ 23 ]
+initial
+begin
+	datW[23] = 1'b0;
+end 
+// datW[ 22 ]
+initial
+begin
+	datW[22] = 1'b0;
+end 
+// datW[ 21 ]
+initial
+begin
+	datW[21] = 1'b0;
+end 
+// datW[ 20 ]
+initial
+begin
+	datW[20] = 1'b0;
+end 
+// datW[ 19 ]
+initial
+begin
+	datW[19] = 1'b0;
+end 
+// datW[ 18 ]
+initial
+begin
+	datW[18] = 1'b0;
+end 
+// datW[ 17 ]
+initial
+begin
+	datW[17] = 1'b0;
+end 
+// datW[ 16 ]
+initial
+begin
+	datW[16] = 1'b0;
+end 
+// datW[ 15 ]
+initial
+begin
+	datW[15] = 1'b0;
+end 
+// datW[ 14 ]
+initial
+begin
+	datW[14] = 1'b0;
+end 
+// datW[ 13 ]
+initial
+begin
+	datW[13] = 1'b0;
+end 
+// datW[ 12 ]
+initial
+begin
+	datW[12] = 1'b0;
+end 
+// datW[ 11 ]
+initial
+begin
+	datW[11] = 1'b0;
+end 
+// datW[ 10 ]
+initial
+begin
+	datW[10] = 1'b0;
+end 
+// datW[ 9 ]
+initial
+begin
+	datW[9] = 1'b0;
+end 
+// datW[ 8 ]
+initial
+begin
+	datW[8] = 1'b0;
+end 
+// datW[ 7 ]
+initial
+begin
+	datW[7] = 1'b0;
+end 
+// datW[ 6 ]
+initial
+begin
+	datW[6] = 1'b0;
+end 
+// datW[ 5 ]
+initial
+begin
+	datW[5] = 1'b0;
+end 
+// datW[ 4 ]
+initial
+begin
+	datW[4] = 1'b0;
+end 
+// datW[ 3 ]
+initial
+begin
+	datW[3] = 1'b1;
+end 
+// datW[ 2 ]
+initial
+begin
+	datW[2] = 1'b0;
+end 
+// datW[ 1 ]
+initial
+begin
+	datW[1] = 1'b1;
+end 
+// datW[ 0 ]
+initial
+begin
+	datW[0] = 1'b0;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b0;
+end 
+endmodule
+
